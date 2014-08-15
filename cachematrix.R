@@ -2,12 +2,11 @@
 
 
 # This set of two functions can store the values of a matrix and its inverse (if the matrix is invertible)
-# in a variable in the global environment, and can then later retrieve them from there,
-# rather than calculating it again.
+# in the global environment, and can then later retrieve the inverse from there, rather than calculating it again.
 
 
-# 1. makeCacheMatrix: This function creates a special list, which contains 4 functions.
-# These functions can A) cache a matrix (save it), B) return this cached matrix, C) set the value of a variable which stores the inverse
+# 1. makeCacheMatrix: This function returns a special list, which contains 4 functions.
+# These functions can A) cache a matrix (save it), B) return this cached matrix, C) set the value of a variable that stores the inverse
 # of the cached matrix and D) return the inverse of the matrix from that variable.
 
 makeCacheMatrix <- function(x = matrix()) {   # defines function, input is a matrix.
